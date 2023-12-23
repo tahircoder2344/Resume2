@@ -1,0 +1,113 @@
+.form {
+  height: 600px;
+  width: 500px;
+  margin: auto;
+  /* display: flex;
+    justify-content: center; */
+  padding: 10px;
+  background-color: #0f283a;
+  border-radius: 30px;
+  transform-origin: center;
+  transition: transform .5s ease;
+
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 0;
+}
+form h1,
+h4 {
+  padding: 3px;
+  text-align: center;
+}
+form h4{
+    color: rgb(208, 156, 221);
+    font-size: 1.25rem;
+}
+form span {
+  font-size: 20px;
+  text-align: center;
+  color: #00abf0;
+}
+form ul {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  list-style: none;
+}
+form h4 {
+  text-decoration: none;
+}
+.menu {
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+}
+form ul li {
+  background-color: rgb(49, 68, 49);
+  padding: 20px;
+  width: 400px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+}
+.form:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width: 767px) {
+    .form {
+      width: 90%; /* Adjust width for smaller screens */
+      height: auto; /* Allow the height to adjust based on content */
+      border-radius: 15px; /* Smaller border radius for smaller screens */
+      /* Other adjustments as needed */
+    }
+    
+    form ul li {
+      width: 90%; /* Adjust list item width for smaller screens */
+      /* Other adjustments for list items on smaller screens */
+    }
+  
+    /* Other styles for smaller screens */
+  }
+  
+  /* Media query for screens between 768px and 1023px */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .form {
+      width: 80%; /* Adjust width for medium-sized screens */
+      /* Other adjustments as needed */
+    }
+  
+    form ul li {
+      width: 80%; /* Adjust list item width for medium-sized screens */
+      /* Other adjustments for list items on medium-sized screens */
+    }
+  
+    /* Other styles for medium-sized screens */
+  }
+  
+  /* Media query for screens larger than 1023px */
+  @media screen and (min-width: 1024px) {
+    /* Keep default styles for larger screens */
+    
+    form ul li {
+      width: 400px; /* Reset list item width for larger screens */
+      /* Other adjustments for list items on larger screens */
+    }
+  
+    /* Other styles for larger screens */
+  }
+  
